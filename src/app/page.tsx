@@ -1,8 +1,14 @@
 import Image from 'next/image';
-import styles from './page.module.css';
+import css from './page.module.css';
 
-export const Home = () => {
-  return <div>main page</div>;
+import { Intro } from '~/sections/intro';
+
+export const Index = () => {
+  return (
+    <div className={css.mainContainer}>
+      <Intro />
+    </div>
+  );
 };
 
-export default Home;
+export default Index;

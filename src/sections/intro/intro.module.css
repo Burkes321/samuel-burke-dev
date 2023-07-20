@@ -1,0 +1,24 @@
+
+
+.container {
+  height: 100vh;
+  color: var(--secondary-shade);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contentContainer {
+    background-color: red;
+    width: 80%;
+
+    .title {
+      font-weight: var(--default-font-weight);
+      font-size: 106px;
+    }
+
+    .subtext {
+      font-weight: var(--default-font-weight);
+      font-size: 40px;
+    }
+  }
+}
