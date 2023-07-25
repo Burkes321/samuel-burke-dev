@@ -7,7 +7,6 @@ interface Props {
   contentContainerClassName?: string;
 }
 
-// Add a "logo" prop - can be used to pass company logos and linkedin / gh buttons
 export const Section = ({
   title,
   subtext,

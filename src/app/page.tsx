@@ -2,10 +2,31 @@ import Image from 'next/image';
 import css from './page.module.css';
 
 import { Section } from '~/components';
+import Link from 'next/link';
 
 export const Index = () => {
   return (
-    <div className={css.mainContainer}>
+    <div className={css.mainContainer} style={{ position: 'relative' }}>
+      <div className={css.socialsContainer}>
+        {/* TODO: create glow on hover for the links and maybe underline on hover */}
+        <Link href="https://github.com/Burkes321/samuel-burke-dev">
+          <Image
+            src="/icon-github.svg"
+            width={48}
+            height={48}
+            alt="link to github"
+          />
+        </Link>
+        <Link href="https://www.linkedin.com/in/samuelburke332/">
+          <Image
+            src="/icon-linkedin.svg"
+            width={48}
+            height={48}
+            alt="link to github"
+          />
+        </Link>
+      </div>
+
       <Section
         title="Hi, I'm Sam"
         // TODO: Figure out how to pass the mix of bold and reg text here
