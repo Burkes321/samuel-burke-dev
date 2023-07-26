@@ -7,10 +7,12 @@ import Link from 'next/link';
 export const Index = () => {
   return (
     <div className={css.mainContainer} style={{ position: 'relative' }}>
-      <div className={css.socialsContainer}>
-        {/* TODO: create glow on hover for the links and maybe underline on hover */}
+      <div className={css.socialIconsContainer}>
+        {/* TODO: change the color of the icons on hover - tricky becuase of next/image */}
+        {/* TODO: create some underline grow effect on hover */}
         <Link href="https://github.com/Burkes321/samuel-burke-dev">
           <Image
+            className={css.githubLogo}
             src="/icon-github.svg"
             width={48}
             height={48}
