@@ -1,25 +1,22 @@
 .mainContainer {
   min-height: 100vh;
   background-color: var(--primary-shade);
-  position: relative;
 
-  .socialIconsContainer {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 100px;
-    right: 100px;
-    width: 137px;
-  }
-
-  .downArrow {
-    position: sticky;
-    bottom: 139px;
-    left: 75px;
-    animation-name: bounce;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  }
+    
+    .socialIconsContainer {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 100px;
+      right: 100px;
+      width: 137px;
+    }
+  
+    .downArrow {
+      position: sticky;
+      bottom: 139px;
+      left: 75px;
+    }
 }
 
 
@@ -29,6 +26,12 @@
   border-left: 6px solid;
   border-image: linear-gradient(var(--secondary-shade), var(--primary-shade)) 0 100%;
   padding-left: 20px;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes bounce {

@@ -1,13 +1,38 @@
+'use client';
+
 import Image from 'next/image';
 import css from './page.module.css';
 
 import { Section } from '~/components';
 import Link from 'next/link';
 import classNames from 'classnames';
+import React, { useEffect, useState } from 'react';
+
+// TODO: maybe move this into util
+const checkWindowScrolledToBottom = () => {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const totalHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+  );
+
+  return scrollTop + windowHeight >= totalHeight;
+};
 
 export const Index = () => {
+  const [windowAtBottom, setWindowAtBottom] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (checkWindowScrolledToBottom()) {
+        setWindowAtBottom(true);
+      }
+    });
+  }, []);
+
   return (
-    <div className={css.mainContainer} style={{ position: 'relative' }}>
+    <div className={css.mainContainer}>
       <div className={css.socialIconsContainer}>
         {/* TODO: change the color of the icons on hover - tricky becuase of next/image */}
         {/* TODO: create some underline grow effect on hover */}
@@ -31,28 +56,29 @@ export const Index = () => {
 
       <Section
         title="Hi, I'm Sam"
-        // TODO: Figure out how to pass the mix of bold and reg text here
+        // TODO: Change this prop to a ReactNode so that you can pass a <p>
+        // with <strong> text
         subtext="I’m an experienced full stack web developer currently working 
-        at Emplifi in Czechia, and also enjoy freelancing on the side."
+          at Emplifi in Czechia, and also enjoy freelancing on the side."
         contentContainerClassName={css.introContentContainer}
       />
 
       <Section
         title="Emplifi"
         subtext="I currently work here as a full stack developer, creating and maintaining
-        features for a social media analytics tool used by some of the world’s 
-        largest companies"
+          features for a social media analytics tool used by some of the world’s 
+          largest companies"
       />
 
       <Section
         title="GoodData"
         subtext="I currently work here as a full stack developer, creating and maintaining
-        features for a social media analytics tool used by some of the world’s 
-        largest companies"
+          features for a social media analytics tool used by some of the world’s 
+          largest companies"
       />
 
       <Image
-        className={classNames(css.downArrow, css.bounce)}
+        className={classNames(css.downArrow, !windowAtBottom && css.bounce)}
         src="/arrow-down.svg"
         width={64}
         height={64}
