@@ -2,12 +2,13 @@
   min-height: 100vh;
   background-color: var(--primary-shade);
 
-  /* It is definitely worth to merge this into the same div 
-  with the linked in and github buttons */
   .linksContainer {
-    display: inline;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
     top: 100px;
+    left: 193px;
+    width: 700px;
 
     .link {
       font-size: 40px;

@@ -33,9 +33,16 @@ const Index = () => {
 
   return (
     <div className={css.mainContainer}>
+      {/* TODO: merge these into one flex container with the social buttons */}
       <div className={css.linksContainer}>
+        <Link className={css.link} href="/about">
+          About
+        </Link>
         <Link className={css.link} href="/experience">
           Experience
+        </Link>
+        <Link className={css.link} href="/contact">
+          Get in Touch
         </Link>
       </div>
 
