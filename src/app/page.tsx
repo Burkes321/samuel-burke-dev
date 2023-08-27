@@ -20,7 +20,7 @@ const checkWindowScrolledToBottom = () => {
   return scrollTop + windowHeight >= totalHeight;
 };
 
-export const Index = () => {
+const Index = () => {
   const [windowAtBottom, setWindowAtBottom] = useState(false);
 
   useEffect(() => {
@@ -33,6 +33,19 @@ export const Index = () => {
 
   return (
     <div className={css.mainContainer}>
+      {/* TODO: merge these into one flex container with the social buttons */}
+      <div className={css.linksContainer}>
+        <Link className={css.link} href="/about">
+          About
+        </Link>
+        <Link className={css.link} href="/experience">
+          Experience
+        </Link>
+        <Link className={css.link} href="/contact">
+          Get in Touch
+        </Link>
+      </div>
+
       <div className={css.socialIconsContainer}>
         {/* TODO: change the color of the icons on hover - tricky becuase of next/image */}
         {/* TODO: create some underline grow effect on hover */}
