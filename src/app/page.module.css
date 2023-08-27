@@ -2,6 +2,21 @@
   min-height: 100vh;
   background-color: var(--primary-shade);
 
+  /* It is definitely worth to merge this into the same div 
+  with the linked in and github buttons */
+  .linksContainer {
+    display: inline;
+    position: relative;
+    top: 100px;
+
+    .link {
+      font-size: 40px;
+      text-decoration: none;
+      color: var(--secondary-shade);
+      font-weight: var(--default-font-weight);
+    }
+  }
+
   .socialIconsContainer {
     display: flex;
     justify-content: space-between;
