@@ -56,10 +56,13 @@ export const Index = () => {
 
       <Section
         title="Hi, I'm Sam"
-        // TODO: Change this prop to a ReactNode so that you can pass a <p>
-        // with <strong> text
-        subtext="I’m an experienced full stack web developer currently working 
-          at Emplifi in Czechia, and also enjoy freelancing on the side."
+        subtext={
+          <>
+            I’m an experienced <strong>full stack</strong> web developer
+            currently working at <strong>Emplifi</strong> in Czechia, and also
+            enjoy <strong>freelancing</strong> on the side.
+          </>
+        }
         contentContainerClassName={css.introContentContainer}
       />
 

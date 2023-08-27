@@ -1,9 +1,10 @@
+import { ReactNode } from 'react';
 import css from './section.module.css';
 import classNames from 'classnames';
 
 interface Props {
   title: string;
-  subtext: string;
+  subtext: ReactNode;
   contentContainerClassName?: string;
 }
 
