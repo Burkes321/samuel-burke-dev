@@ -7,8 +7,8 @@ import { Section } from '~/components';
 import Link from 'next/link';
 import classNames from 'classnames';
 import React, { useEffect, useState } from 'react';
+import { GithubLogo, LinkedinLogo } from '~/components';
 
-// TODO: maybe move this into util
 const checkWindowScrolledToBottom = () => {
   const scrollTop = window.scrollY;
   const windowHeight = window.innerHeight;
@@ -33,7 +33,6 @@ const Index = () => {
 
   return (
     <div className={css.mainContainer}>
-      {/* TODO: merge these into one flex container with the social buttons */}
       <div className={css.linksContainer}>
         <Link className={css.link} href="/about">
           About
@@ -47,23 +46,18 @@ const Index = () => {
       </div>
 
       <div className={css.socialIconsContainer}>
-        {/* TODO: change the color of the icons on hover - tricky becuase of next/image */}
-        {/* TODO: create some underline grow effect on hover */}
         <Link href="https://github.com/Burkes321/samuel-burke-dev">
-          <Image
-            src="/icon-github.svg"
-            width={48}
-            height={48}
-            alt="link to github"
-          />
+          <GithubLogo className={css.socialIcon} />
         </Link>
         <Link href="https://www.linkedin.com/in/samuelburke332/">
-          <Image
+          {/* <Image
             src="/icon-linkedin.svg"
             width={48}
             height={48}
             alt="link to linkedin"
-          />
+          /> */}
+
+          <LinkedinLogo className={css.socialIcon} />
         </Link>
       </div>
 

@@ -41,8 +41,9 @@
 } */
 
 :root {
-  --primary-shade: #1C1C23;
-  --secondary-shade: #E4E2D7;
+  --primary-shade: #1c1c23;
+  --secondary-shade: #e4e2d7;
+  --social-icon-hover: #373af0;
   --default-font-weight: 200;
 }
 
