@@ -50,13 +50,6 @@ const Index = () => {
           <GithubLogo className={css.socialIcon} />
         </Link>
         <Link href="https://www.linkedin.com/in/samuelburke332/">
-          {/* <Image
-            src="/icon-linkedin.svg"
-            width={48}
-            height={48}
-            alt="link to linkedin"
-          /> */}
-
           <LinkedinLogo className={css.socialIcon} />
         </Link>
       </div>
