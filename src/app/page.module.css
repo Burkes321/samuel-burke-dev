@@ -30,7 +30,6 @@
       fill: var(--secondary-shade);
 
       &.socialIcon:hover {
-        /* fill: red; */
         animation-name: socialIconGrowOnHover;
         animation-duration: 1s;
         animation-fill-mode: forwards;
@@ -87,12 +86,8 @@
 @keyframes socialIconGrowOnHover {
   0% {
     fill: var(--secondary-shade);
-    height: 48px;
-    width: 48px;
   }
   100% {
     fill: var(--social-icon-hover);
-    height: 64px;
-    width: 64px;
   }
 }
