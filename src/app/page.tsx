@@ -1,32 +1,12 @@
 import css from './page.module.css';
 
-import { Section, GithubLogo, LinkedinLogo } from '~/components';
-import Link from 'next/link';
+import { Section, NavigationBar } from '~/components';
 import React from 'react';
 
 const Index = () => {
   return (
     <div className={css.mainContainer}>
-      <div className={css.linksContainer}>
-        <Link className={css.link} href="/">
-          About
-        </Link>
-        <Link className={css.link} href="/experience">
-          Experience
-        </Link>
-        <Link className={css.link} href="/contact">
-          Get in Touch
-        </Link>
-      </div>
-
-      <div className={css.socialIconsContainer}>
-        <Link href="https://github.com/Burkes321/samuel-burke-dev">
-          <GithubLogo className={css.socialIcon} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/samuelburke332/">
-          <LinkedinLogo className={css.socialIcon} />
-        </Link>
-      </div>
+      <NavigationBar />
 
       <Section
         title="Hi, I'm Sam"

@@ -1,13 +1,12 @@
 'use client';
 
-import { GithubLogo, LinkedinLogo, Section } from '~/components';
+import { NavigationBar, Section } from '~/components';
 import classNames from 'classnames';
 
 import Image from 'next/image';
 
 import css from './page.module.css';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 const checkWindowScrolledToBottom = () => {
   const scrollTop = window.scrollY;
@@ -33,26 +32,7 @@ const Experience = () => {
 
   return (
     <div className={css.mainContainer}>
-      <div className={css.linksContainer}>
-        <Link className={css.link} href="/">
-          About
-        </Link>
-        <Link className={css.link} href="/experience">
-          Experience
-        </Link>
-        <Link className={css.link} href="mailto:sam.burke99@gmail.com">
-          Get in Touch
-        </Link>
-      </div>
-
-      <div className={css.socialIconsContainer}>
-        <Link href="https://github.com/Burkes321/samuel-burke-dev">
-          <GithubLogo className={css.socialIcon} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/samuelburke332/">
-          <LinkedinLogo className={css.socialIcon} />
-        </Link>
-      </div>
+      <NavigationBar />
 
       <Section
         title="Freelance"
