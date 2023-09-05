@@ -1,67 +1,6 @@
 .mainContainer {
   min-height: 100vh;
   background-color: var(--primary-shade);
-
-  .linksContainer {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 100px;
-    left: 193px;
-    width: 700px;
-
-    .link {
-      font-size: 40px;
-      text-decoration: none;
-      color: var(--secondary-shade);
-      font-weight: var(--default-font-weight);
-      display: inline-block;
-      position: relative;
-    }
-
-    .link::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--secondary-shade);
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-
-    .link:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-  }
-
-  .socialIconsContainer {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 100px;
-    right: 100px;
-    width: 137px;
-
-    .socialIcon {
-      fill: var(--secondary-shade);
-
-      &.socialIcon:hover {
-        animation-name: socialIconGrowOnHover;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-      }
-    }
-  }
-
-  .downArrow {
-    position: sticky;
-    bottom: 139px;
-    left: 75px;
-  }
 }
 
 .introContentContainer {
@@ -74,24 +13,6 @@
   animation-duration: 3s;
 }
 
-.bounce {
-  animation-name: bounce;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @keyframes textFadeInTranslateUp {
   0% {
     opacity: 0%;
@@ -100,14 +21,5 @@
   100% {
     opacity: 100%;
     transform: translateY(0);
-  }
-}
-
-@keyframes socialIconGrowOnHover {
-  0% {
-    fill: var(--secondary-shade);
-  }
-  100% {
-    fill: var(--social-icon-hover);
   }
 }
