@@ -13,7 +13,7 @@ export const NavigationBar = () => {
         <Link className={css.link} href="/experience">
           Experience
         </Link>
-        <Link className={css.link} href="/contact">
+        <Link className={css.link} href="mailto:sam.burke99@gmail.com">
           Get in Touch
         </Link>
       </div>
