@@ -7,31 +7,30 @@ import { NavigationBar } from '~/components/navigationBar/NavigationBar';
 // import Image from 'next/image';
 
 import css from './page.module.css';
-import { useEffect, useState } from 'react';
 import { TextGroup } from '~/components/textGroup/TextGroup';
 
 // TODO: move to utils
-const checkWindowScrolledToBottom = () => {
-  const scrollTop = window.scrollY;
-  const windowHeight = window.innerHeight;
-  const totalHeight = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight
-  );
+// const checkWindowScrolledToBottom = () => {
+//   const scrollTop = window.scrollY;
+//   const windowHeight = window.innerHeight;
+//   const totalHeight = Math.max(
+//     document.body.scrollHeight,
+//     document.documentElement.scrollHeight
+//   );
 
-  return scrollTop + windowHeight >= totalHeight;
-};
+//   return scrollTop + windowHeight >= totalHeight;
+// };
 
 const Experience = () => {
-  const [windowAtBottom, setWindowAtBottom] = useState(false);
+  // const [windowAtBottom, setWindowAtBottom] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (checkWindowScrolledToBottom()) {
-        setWindowAtBottom(true);
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', () => {
+  //     if (checkWindowScrolledToBottom()) {
+  //       setWindowAtBottom(true);
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className={css.mainContainer}>
