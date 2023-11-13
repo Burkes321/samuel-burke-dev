@@ -1,18 +1,33 @@
-/* .mainContainer {
-  min-height: 100vh;
-  background-color: var(--primary-shade);
-} */
-
-/* .introContentContainer {
-  border-width: 0;
-  padding-left: 20px;
-  animation-name: textFadeInTranslateUp;
-  animation-duration: 3s;
-} */
-
 .mainContainer {
+  /* TODO: make a page component which is abs positioned and min 100vh and min 100vw */
+
   min-height: 100vh;
+  min-width: 100vw;
   background-color: var(--primary-shade);
+  color: var(--secondary-shade);
+
+  .contentContainer {
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+
+    .headerContainer {
+      animation-name: textFadeInTranslateUp;
+      animation-duration: 2s;
+
+      .title {
+        font-weight: var(--default-font-weight);
+        font-size: 106px;
+      }
+
+      .subtext {
+        font-weight: var(--default-font-weight);
+        font-size: 40px;
+      }
+    }
+  }
 }
 
 @keyframes textFadeInTranslateUp {
