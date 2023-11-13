@@ -38,7 +38,7 @@ const Experience = () => {
         title="Freelance"
         subtext={
           <>
-            In my free time, I love to <strong>work with companies</strong> as a
+            In my free time, I love to <strong>work with companies</strong> as a{' '}
             <strong>freelancer</strong>. My most recent project involved
             building a <strong>data analytics dashboard</strong> on top of
             Microsoft Azure sentinel, using{' '}
