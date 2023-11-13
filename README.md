@@ -25,4 +25,5 @@ Simple personal website made in next js
 ## TODO
 
 - instead of having each piece of text be an entire page, fit it in a more normal flow of a document. Remove the <Section /> approach I've gone with so far
+- turn the text pieces into extensible react comopnent for DRY purposes
 - Once I have some personal projects done, create a section to showcase them
