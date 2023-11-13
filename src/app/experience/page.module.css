@@ -1,11 +1,20 @@
 .mainContainer {
   min-height: 100vh;
-  padding: 100px 150px;
+  min-width: 100vw;
   background-color: var(--primary-shade);
+  color: var(--secondary-shade);
 
-  .downArrow {
-    position: sticky;
-    bottom: 139px;
-    left: 75px;
+  .contentContainer {
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+
+    .downArrow {
+      position: sticky;
+      bottom: 139px;
+      left: 75px;
+    }
   }
 }
