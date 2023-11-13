@@ -42,12 +42,25 @@ const Index = () => {
           </div>
         </div>
 
-        <div className={css.headerContainer}>
+        <div className={css.stackContainer}>
           <div className={css.title}>My Stack</div>
           <div className={css.subtext}>
             My main stack is <strong>React, Next JS, Node JS, Express</strong>,
             but technology is my lifes passion and I&apos;m willing to learn{' '}
             <strong>anything</strong>
+          </div>
+        </div>
+
+        <div className={css.stackContainer}>
+          <div className={css.title}>Let&apos;s get in touch</div>
+          <div className={css.subtext}>
+            I&apos;m always open to freelancing in addition to my regular day
+            job, and would love to get in touch and help you solve your business
+            problems. You can each me with the <strong>get in touch</strong>{' '}
+            button above or send me an email at{' '}
+            <u>
+              <strong>sam.burke99@gmail.com</strong>
+            </u>
           </div>
         </div>
       </div>

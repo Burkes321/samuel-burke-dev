@@ -16,18 +16,28 @@
     .headerContainer {
       animation-name: textFadeInTranslateUp;
       animation-duration: 2s;
+    }
 
-      .title {
-        font-weight: var(--default-font-weight);
-        font-size: 106px;
-      }
+    .stackContainer {
+      animation-name: textFadeInTranslateUp;
+      animation-duration: 3s;
+    }
 
-      .subtext {
-        font-weight: var(--default-font-weight);
-        font-size: 40px;
-      }
+    .openToWorkContianer {
+      animation-name: textFadeInTranslateUp;
+      animation-duration: 4s;
     }
   }
+}
+
+.title {
+  font-weight: var(--default-font-weight);
+  font-size: 106px;
+}
+
+.subtext {
+  font-weight: var(--default-font-weight);
+  font-size: 40px;
 }
 
 @keyframes textFadeInTranslateUp {
@@ -37,6 +47,7 @@
   }
   100% {
     opacity: 100%;
+    color: var(--secondary-shade);
     transform: translateY(0);
   }
 }
