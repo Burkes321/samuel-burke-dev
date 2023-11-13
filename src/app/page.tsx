@@ -9,29 +9,6 @@ const Index = () => {
       <div className={css.contentContainer}>
         <NavigationBar />
 
-        {/* <Section
-         title="Hi, I'm Sam"
-         subtext={
-           <>
-             I’m an experienced <strong>full stack</strong> web developer
-             currently working at <strong>Emplifi</strong> in Czechia, and also
-             enjoy <strong>freelancing</strong> on the side.
-           </>
-         }
-         contentContainerClassName={css.introContentContainer}
-       />
-      
-       <Section
-         title="My Stack"
-         subtext={
-           <>
-             My main stack is <strong>React, Next JS, Node JS, Express</strong>,
-             but technology is my passion and I&apos;m willing to learn{' '}
-             <strong>anything</strong>
-           </>
-         }
-       /> */}
-
         {/* TODO: maybe try and make this into an extensible component like the <Section /> */}
         <div className={css.headerContainer}>
           <div className={css.title}>Hi, I&apos;m Sam</div>
@@ -46,8 +23,8 @@ const Index = () => {
           <div className={css.title}>My Stack</div>
           <div className={css.subtext}>
             My main stack is <strong>React, Next JS, Node JS, Express</strong>,
-            but technology is my lifes passion and I&apos;m willing to learn{' '}
-            <strong>anything</strong>
+            but technology is my life&apos;s passion and I&apos;m willing to
+            learn <strong>anything</strong>.
           </div>
         </div>
 
@@ -56,7 +33,7 @@ const Index = () => {
           <div className={css.subtext}>
             I&apos;m always open to freelancing in addition to my regular day
             job, and would love to get in touch and help you solve your business
-            problems. You can each me with the <strong>get in touch</strong>{' '}
+            problems. You can reach me with the <strong>get in touch</strong>{' '}
             button above or send me an email at{' '}
             <u>
               <strong>sam.burke99@gmail.com</strong>
