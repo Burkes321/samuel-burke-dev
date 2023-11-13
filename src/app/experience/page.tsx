@@ -1,13 +1,15 @@
 'use client';
 
-import { NavigationBar, Section } from '~/components';
-import classNames from 'classnames';
+// import { NavigationBar, Section } from '~/components';
 
-import Image from 'next/image';
+import { NavigationBar } from '~/components/navigationBar/NavigationBar';
+
+// import Image from 'next/image';
 
 import css from './page.module.css';
 import { useEffect, useState } from 'react';
 
+// TODO: move to utils
 const checkWindowScrolledToBottom = () => {
   const scrollTop = window.scrollY;
   const windowHeight = window.innerHeight;
@@ -34,7 +36,7 @@ const Experience = () => {
     <div className={css.mainContainer}>
       <NavigationBar />
 
-      <Section
+      {/* <Section
         title="Freelance"
         subtext={
           <>
@@ -71,7 +73,7 @@ const Experience = () => {
         width={64}
         height={64}
         alt="link to github"
-      />
+      /> */}
     </div>
   );
 };
