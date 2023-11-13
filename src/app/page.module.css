@@ -1,13 +1,18 @@
-.mainContainer {
+/* .mainContainer {
   min-height: 100vh;
   background-color: var(--primary-shade);
-}
+} */
 
-.introContentContainer {
+/* .introContentContainer {
   border-width: 0;
   padding-left: 20px;
   animation-name: textFadeInTranslateUp;
   animation-duration: 3s;
+} */
+
+.mainContainer {
+  min-height: 100vh;
+  background-color: var(--primary-shade);
 }
 
 @keyframes textFadeInTranslateUp {

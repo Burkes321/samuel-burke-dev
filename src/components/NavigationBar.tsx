@@ -5,7 +5,7 @@ import { LinkedinLogo } from './LinkedinLogo';
 
 export const NavigationBar = () => {
   return (
-    <>
+    <div className={css.navigationContainer}>
       <div className={css.linksContainer}>
         <Link className={css.link} href="/">
           About
@@ -26,6 +26,6 @@ export const NavigationBar = () => {
           <LinkedinLogo className={css.socialIcon} />
         </Link>
       </div>
-    </>
+    </div>
   );
 };

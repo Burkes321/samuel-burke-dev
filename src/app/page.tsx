@@ -8,7 +8,7 @@ const Index = () => {
     <div className={css.mainContainer}>
       <NavigationBar />
 
-      <Section
+      {/* <Section
         title="Hi, I'm Sam"
         subtext={
           <>
@@ -29,7 +29,9 @@ const Index = () => {
             <strong>anything</strong>
           </>
         }
-      />
+      /> */}
+
+      <div>Hi, I&apos;m Sam</div>
     </div>
   );
 };
