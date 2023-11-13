@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import css from './navigationBar.module.css';
-import { GithubLogo } from './GithubLogo';
-import { LinkedinLogo } from './LinkedinLogo';
+import { GithubLogo } from '../images/GithubLogo';
+import { LinkedinLogo } from '../images/LinkedinLogo';
 
 export const NavigationBar = () => {
   return (

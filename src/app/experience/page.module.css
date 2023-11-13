@@ -1,28 +1,11 @@
 .mainContainer {
   min-height: 100vh;
+  padding: 100px 150px;
   background-color: var(--primary-shade);
 
   .downArrow {
     position: sticky;
     bottom: 139px;
     left: 75px;
-  }
-}
-
-.bounce {
-  animation-name: bounce;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }

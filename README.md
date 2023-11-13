@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About this project
+
+Simple personal website made in next js which will also be used to show off my personal projects in the future
 
 ## Getting Started
 
@@ -18,13 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## About this project
+## TODO - things I want to implement in the future
 
-Simple personal website made in next js
-
-## TODO
-
-- instead of having each piece of text be an entire page, fit it in a more normal flow of a document. Remove the <Section /> approach I've gone with so far
+- instead of having each piece of text be an entire page, fit it in a more normal flow of a document. Remove the <Section /> approach I've gone with so far (just to be done on experience page now)
 - turn the text pieces into extensible react comopnent for DRY purposes
 - Once I have some personal projects done, create a section to showcase them
 - responsivity down to most mobile devices (~360px width), currently works down to 1200px
+- add a blog - somewhere to post thoughts about new tech, trends etc

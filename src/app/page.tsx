@@ -1,6 +1,6 @@
 import css from './page.module.css';
 
-import { NavigationBar } from '~/components';
+import { NavigationBar } from '~/components/navigationBar/NavigationBar';
 import React from 'react';
 
 const Index = () => {
