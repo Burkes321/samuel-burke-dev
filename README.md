@@ -22,8 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## TODO - things I want to implement in the future
 
-- instead of having each piece of text be an entire page, fit it in a more normal flow of a document. Remove the <Section /> approach I've gone with so far (just to be done on experience page now)
-- turn the text pieces into extensible react comopnent for DRY purposes
+- add some max-width to each page to make very large display not cause problems
 - Once I have some personal projects done, create a section to showcase them
 - responsivity down to most mobile devices (~360px width), currently works down to 1200px
 - add a blog - somewhere to post thoughts about new tech, trends etc
