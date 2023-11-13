@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 // import { NavigationBar, Section } from '~/components';
 
@@ -45,7 +45,7 @@ const Experience = () => {
               a <strong>freelancer</strong>. My most recent project involved
               building a <strong>data analytics dashboard</strong> on top of
               Microsoft Azure sentinel, using <strong>Next js</strong> and{' '}
-              <strong>recharts</strong>
+              <strong>recharts</strong>.
             </>
           }
         />
@@ -56,7 +56,7 @@ const Experience = () => {
             <>
               I currently work here as a <strong>full stack developer</strong>,
               creating and maintaining features for a social media analytics
-              tool used by some of the world&apos;s largest companies
+              tool used by some of the world&apos;s largest companies.
             </>
           }
         />
@@ -65,9 +65,10 @@ const Experience = () => {
           title="GoodData"
           subtext={
             <>
-              I currently work here as a <strong>full stack developer</strong>,
-              creating and maintaining features for a social media analytics
-              tool used by some of the world’s largest companies
+              My previous position, where I worked as part of a team to create{' '}
+              <strong>custom data analytics dashboards</strong> for some of the
+              world&apos;s larges payment processors. React, Typescript,
+              storybook, and recharts were my main tools.
             </>
           }
         />

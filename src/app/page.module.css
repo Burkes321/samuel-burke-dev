@@ -3,10 +3,13 @@
 
   min-height: 100vh;
   min-width: 100vw;
+  display: flex;
+  justify-content: center;
   background-color: var(--primary-shade);
   color: var(--secondary-shade);
 
   .contentContainer {
+    max-width: 1500px;
     padding: 100px 150px;
     display: flex;
     flex-direction: column;
