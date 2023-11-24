@@ -1,10 +1,4 @@
-// 'use client';
-
-// import { NavigationBar, Section } from '~/components';
-
 import { NavigationBar } from '~/components/navigationBar/NavigationBar';
-
-// import Image from 'next/image';
 
 import css from './page.module.css';
 import { TextGroup } from '~/components/textGroup/TextGroup';
