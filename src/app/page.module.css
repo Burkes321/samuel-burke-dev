@@ -1,5 +1,5 @@
 .mainContainer {
-  /* TODO: make a page component which is abs positioned and min 100vh and min 100vw */
+  /* TODO: make a page component which is abs positioned and 100vh and 100vw */
 
   min-height: 100vh;
   min-width: 100vw;
@@ -16,41 +16,8 @@
     justify-content: space-between;
     gap: 100px;
 
-    .headerContainer {
-      animation-name: textFadeInTranslateUp;
-      animation-duration: 2s;
+    @media (max-width: 1200px) {
+      padding: 100px 30px;
     }
-
-    .stackContainer {
-      animation-name: textFadeInTranslateUp;
-      animation-duration: 3s;
-    }
-
-    .openToWorkContianer {
-      animation-name: textFadeInTranslateUp;
-      animation-duration: 4s;
-    }
-  }
-}
-
-.title {
-  font-weight: var(--default-font-weight);
-  font-size: 96px;
-}
-
-.subtext {
-  font-weight: var(--default-font-weight);
-  font-size: 40px;
-}
-
-@keyframes textFadeInTranslateUp {
-  0% {
-    opacity: 0%;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 100%;
-    color: var(--secondary-shade);
-    transform: translateY(0);
   }
 }

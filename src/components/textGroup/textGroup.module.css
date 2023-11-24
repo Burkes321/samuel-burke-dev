@@ -7,14 +7,20 @@
 
   .title {
     font-weight: var(--default-font-weight);
-    /* TODO: move this px value to global css variable DRY */
-    font-size: 96px;
+    font-size: var(--font-size-title-desktop);
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
   }
 
   .subtext {
     font-weight: var(--default-font-weight);
-    /* TODO: move this px value to global css variable DRY */
-    font-size: 40px;
+    font-size: var(--font-size-text-desktop);
+
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
   }
 }
 
