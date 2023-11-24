@@ -3,6 +3,9 @@
   --secondary-shade: #e4e2d7;
   --social-icon-hover: #373af0;
   --default-font-weight: 200;
+  --font-size-title-desktop: 96px;
+  /* TODO: yet to determine font sizes for mobile */
+  --font-size-text-desktop: 40px;
 }
 
 * {
