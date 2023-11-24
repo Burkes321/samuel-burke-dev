@@ -3,12 +3,25 @@
   max-width: 100%;
   justify-content: space-between;
 
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .linksContainer {
     display: flex;
     justify-content: space-between;
     top: 100px;
     left: 193px;
-    width: 700px;
+
+    @media (min-width: 1200px) {
+      width: 700px;
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 20px;
+    }
 
     .link {
       font-size: 40px;

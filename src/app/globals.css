@@ -4,8 +4,9 @@
   --social-icon-hover: #373af0;
   --default-font-weight: 200;
   --font-size-title-desktop: 96px;
-  /* TODO: yet to determine font sizes for mobile */
+  --font-size-title-mobile: 40px;
   --font-size-text-desktop: 40px;
+  --font-size-text-mobile: 20px;
 }
 
 * {
