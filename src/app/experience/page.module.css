@@ -14,10 +14,8 @@
     justify-content: space-between;
     gap: 100px;
 
-    .downArrow {
-      position: sticky;
-      bottom: 139px;
-      left: 75px;
+    @media (max-width: 1200px) {
+      padding: 100px 30px;
     }
   }
 }
